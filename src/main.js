@@ -54,4 +54,4 @@ function resetPage() {
 
 getRecipeBtn.addEventListener("click", onRandomRecipe);
 
-recipeContainer.addEventListener("click", resetPage);
+document.addEventListener("dblclick", resetPage);
