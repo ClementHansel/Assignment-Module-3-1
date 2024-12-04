@@ -7,16 +7,30 @@
     <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
-    <div class="container">
-      <h1>Random Recipe Finder</h1>
-      <button id="getRecipeBtn">Get Random Recipe</button>
-      <div id="recipeContainer" class="recipe-container">
-        <img class="recipe-image" src="" alt="" />
-        <h2 class="recipe-title"></h2>
-        <p class="recipe-instruction"></p>
+    <div class="container flex flex-col md:flex-col">
+      <div>
+        <h1>Suggested Recipe Finder</h1>
+        <button id="getRecipeBtn">Get Recipe</button>
+        <div id="recipeContainer" class="recipe-container">
+          <img class="recipe-image" src="" alt="" />
+          <h2 class="recipe-title"></h2>
+          <p class="recipe-instruction"></p>
+        </div>
+      </div>
+
+      <div>
+        <h1>Random Recipe Finder</h1>
+        <button id="getRandomRecipeBtn">Get Random Recipe</button>
+        <div id="randomRecipeContainer" class="recipe-container">
+          <img class="randomrecipe-image" src="" alt="" />
+          <h2 class="randomrecipe-title"></h2>
+          <p class="randomrecipe-instruction"></p>
+        </div>
       </div>
     </div>
 
+    <!-- Link to your JavaScript files -->
     <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/app.js"></script>
   </body>
 </html>
